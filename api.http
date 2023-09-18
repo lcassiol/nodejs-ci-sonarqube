@@ -1,0 +1,13 @@
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:3000/
+content-type: application/json
+
+{
+    "plate": 1,
+    "year": 2023,
+    "model": "GOL",
+    "brand": "VW"
+}
