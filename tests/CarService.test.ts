@@ -26,6 +26,5 @@ test("It should be list cars", async function () {
 
   const savedCar = carService.create(car);
   expect(savedCar).toStrictEqual(car);
-
   expect(carService.list()).toEqual([car]);
 });
