@@ -22,7 +22,7 @@ test("It should be list cars", async function () {
     "year": 2023,
     "model": "GOL",
     "brand": "VW"
-  }
+  };
 
   const savedCar = carService.create(car);
   expect(savedCar).toStrictEqual(car);
