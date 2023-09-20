@@ -28,6 +28,4 @@ test("It should be list cars", async function () {
   expect(savedCar).toStrictEqual(car);
 
   expect(carService.list()).toEqual([car]);
-  expect(1).toEqual(2);
-  
 });
