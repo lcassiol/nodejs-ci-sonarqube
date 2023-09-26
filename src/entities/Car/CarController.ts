@@ -8,12 +8,12 @@ export class CarController {
 
   async list (request: Request, response: Response) {
     const cars = await carService.list();
-    return response.status(200).json(cars);
+    response.status(200).json(cars);
   }
 
   async create (request: Request, response: Response) {
     const newCar = request.body as CarInterface;
     await carService.create(newCar);
-    return response.status(201).json(newCar)
+    response.status(201).json(newCar)
   }
 }
