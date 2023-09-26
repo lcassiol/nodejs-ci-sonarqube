@@ -7,12 +7,13 @@ const carService = new CarService();
 export class CarController {
 
   async list (request: Request, response: Response) {
-    return response.status(200).json(carService.list());
+    const cars = await carService.list();
+    return response.status(200).json(cars);
   }
 
   async create (request: Request, response: Response) {
     const newCar = request.body as CarInterface;
-    carService.create(newCar);
+    await carService.create(newCar);
     return response.status(201).json(newCar)
   }
 }
