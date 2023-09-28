@@ -1,9 +1,10 @@
-import express, { Request, Response } from 'express';
-import Routes from './routes'
+import express from 'express';
+import Routes from './routes';
 
+const port = 3000;
 const server = express();
 server.use(express.json());
 server.use(Routes);
 
-server.listen(3000, () => console.log("Monster out of jail!!"));
+server.listen(port);
 export default server;
