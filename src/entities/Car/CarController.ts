@@ -9,13 +9,11 @@ export class CarController {
   async list (request: Request, response: Response) {
     const cars = await carService.list();
     response.status(200).json(cars);
-    return;
   }
 
   async create (request: Request, response: Response) {
     const newCar = request.body as CarInterface;
     await carService.create(newCar);
     response.status(201).json(newCar);
-    return;
   }
 }

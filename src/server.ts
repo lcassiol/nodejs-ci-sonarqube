@@ -6,3 +6,4 @@ server.use(express.json());
 server.use(Routes);
 
 server.listen(3000, () => console.log("Monster out of jail!!"));
+export default server;
