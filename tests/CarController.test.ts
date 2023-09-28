@@ -20,5 +20,5 @@ describe("API E2E Test Suite", () => {
 
     const savedCard = JSON.parse(response.text);
     expect(savedCard).toStrictEqual(newCar);
-  })
-})
+  });
+});
