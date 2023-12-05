@@ -1,3 +1,9 @@
+/*
+ * Nodejs-Ci-Example, Just an example of project integrated with SonarCloud.
+ * Cassio Carvalho
+ * github.com/lcassiol
+ */
+
 import { CarService } from '../src/entities/Car/CarService';
 test('It should be create a car', async function () {
     const carService = new CarService();
