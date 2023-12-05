@@ -18,7 +18,7 @@ describe('API E2E Test Suite', () => {
       'plate': 1,
       'year': 2023,
       'model': 'GOL',
-      'brand': 'VW'
+      'brand': 'VW',
     };
     const response = await superTest(Server).post('/').send(newCar)
     .set('Content-Type', 'application/json');

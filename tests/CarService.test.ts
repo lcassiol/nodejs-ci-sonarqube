@@ -10,7 +10,7 @@ test('It should be create a car', async function () {
       'plate': 1,
       'year': 2023,
       'model': 'GOL',
-      'brand': 'VW'
+      'brand': 'VW',
     };
   
     const savedCar = carService.create(car);
@@ -23,7 +23,7 @@ test('It should be list cars', async function () {
     'plate': 1,
     'year': 2023,
     'model': 'GOL',
-    'brand': 'VW'
+    'brand': 'VW',
   };
 
   const savedCar = carService.create(car);
