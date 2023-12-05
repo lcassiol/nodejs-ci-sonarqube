@@ -6,7 +6,7 @@ test('It should be create a car', async function () {
       'year': 2023,
       'model': 'GOL',
       'brand': 'VW'
-    }
+    };
   
     const savedCar = carService.create(car);
     expect(savedCar).toStrictEqual(car);
