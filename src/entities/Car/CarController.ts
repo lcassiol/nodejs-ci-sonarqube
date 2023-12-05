@@ -4,15 +4,18 @@ import { CarService } from "./CarService";
 
 const carService = new CarService();
 
+const httpStatusCodeSuccess = 200;
+const httpStatusCodeCreated = 201;
 export class CarController {
 
   async list (request: Request, response: Response) {
-    return response.status(200).json(carService.list());
+    const cars = await carService.list();
+    response.status(httpStatusCodeSuccess).json(cars);
   }
 
   async create (request: Request, response: Response) {
     const newCar = request.body as CarInterface;
-    carService.create(newCar);
-    return response.status(201).json(newCar)
+    await carService.create(newCar);
+    response.status(httpStatusCodeCreated).json(newCar);
   }
 }
