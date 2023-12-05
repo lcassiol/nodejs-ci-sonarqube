@@ -1,7 +1,6 @@
 /*
- * Nodejs-Ci-Example, Just an example of project integrated with SonarCloud.
- * Cassio Carvalho
- * github.com/lcassiol
+ *  12.5.2023
+ *  Copyright (c) 2023 lcassiol. All Rights Reserved.  
  */
 
 import superTest from 'supertest';
