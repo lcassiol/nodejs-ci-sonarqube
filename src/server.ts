@@ -1,3 +1,9 @@
+/*
+ * Nodejs-Ci-Example, Just an example of project integrated with SonarCloud.
+ * Cassio Carvalho
+ * github.com/lcassiol
+ */
+
 import express from 'express';
 import Routes from './routes';
 
