@@ -1,7 +1,6 @@
 /*
  *  12.5.2023
  *  Copyright (c) 2023 lcassiol. All Rights Reserved.  
- * 
  */
 
 import superTest from 'supertest';
